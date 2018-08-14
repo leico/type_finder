@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3B21DF9B2123083E001734E9 /* type_finder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = type_finder.h; path = ../type_finder.h; sourceTree = "<group>"; };
+		3B21DF9C21231849001734E9 /* type_finder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = type_finder.h; path = ../includes/type_finder.h; sourceTree = "<group>"; };
 		3B5B4EE721122803001C73E4 /* type_finder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = type_finder; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B5B4EEA21122803001C73E4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,8 +42,8 @@
 		3B5B4EDE21122803001C73E4 = {
 			isa = PBXGroup;
 			children = (
-				3B21DF9B2123083E001734E9 /* type_finder.h */,
-				3B5B4EE921122803001C73E4 /* 07_variadic */,
+				3B21DF9C21231849001734E9 /* type_finder.h */,
+				3B5B4EE921122803001C73E4 /* sources */,
 				3B5B4EE821122803001C73E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +56,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B5B4EE921122803001C73E4 /* 07_variadic */ = {
+		3B5B4EE921122803001C73E4 /* sources */ = {
 			isa = PBXGroup;
 			children = (
 				3B5B4EEA21122803001C73E4 /* main.cpp */,
 			);
-			path = 07_variadic;
+			path = sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
