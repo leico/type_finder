@@ -100,6 +100,14 @@ struct impl < Cond, InTarget, Head, Tail... > {
 ## example
 
 ```cpp
+struct A {  };
+struct B {  };
+struct C {  };
+
+struct AA : public A {  };
+struct AB : public A {  };
+
+...
 
  // same returned not_found
   std :: cout << typeid( type_finder :: same< A, B, C > :: type ).name() << std :: endl ;
