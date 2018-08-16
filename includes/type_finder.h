@@ -43,7 +43,7 @@ namespace type_finder {
     class finder_template {
         
     public:
-        using not_found = not_found;
+        using not_found = type_finder :: not_found;
         
     private:
         
@@ -53,7 +53,7 @@ namespace type_finder {
         , typename... NoArgs
         >
         struct impl {
-            using type = not_found;
+            using type = type_finder :: not_found;
         };
         
         
@@ -82,14 +82,14 @@ namespace type_finder {
     //find same type
     template < typename Target, typename... Args >
     struct same {
-        using not_found = not_found;
+        using not_found = type_finder :: not_found;
         using type      = typename finder_template < std :: is_same, Target, Args... > :: type;
     };
     
     //find same or inherited from target
     template < typename Target, typename... Args >
     struct same_base {
-        using not_found = not_found;
+        using not_found = type_finder :: not_found;
         using type      = typename finder_template < std :: is_base_of, Target, Args... > :: type;
     };
     
@@ -98,7 +98,7 @@ namespace type_finder {
     template < typename Target, typename ...Args >
     struct is_same {
         
-        using not_found = not_found;
+        using not_found = type_finder :: not_found;
         
         static constexpr bool value = std :: is_same<
         Target
@@ -112,7 +112,7 @@ namespace type_finder {
     template < typename Target, typename... Args >
     struct is_same_base {
         
-        using not_found = not_found;
+        using not_found = type_finder :: not_found;
         
         static constexpr bool value = std :: is_same<
         Target
